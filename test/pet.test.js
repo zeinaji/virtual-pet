@@ -1,12 +1,12 @@
 const Pet = require('../src/pet');
 
-describe('constructor', () => {
+describe('Pet', () => {
     let Lyla;
     beforeAll(()=> {
         Lyla = new Pet('Lyla');
     });
     it('returns an object', () => {
-        expect(new Pet('Fido')).toBeInstanceOf(Object);
+        expect(new Pet('Fido')).toBeInstanceOf(Pet);
     });
 
     it('sets the name property', () => {

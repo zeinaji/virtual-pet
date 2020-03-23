@@ -16,10 +16,11 @@ Pet.prototype = {
 Pet.prototype.growUp = function () {
    if(!this.isAlive){
         throw new Error('Your pet is no longer alive :(');
-    }
+    } else {
     this.age += 1;
     this.hunger += 5;
     this.fitness -= 3;
+    }
 }
 
 const max_fitness = 10;
